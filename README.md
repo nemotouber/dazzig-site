@@ -23,9 +23,8 @@ App Store Connect 필수 항목(개인정보처리방침 URL·지원 URL)과 앱
 ## 올리기 전에 채워야 할 것
 
 1. `privacy.html` 10항의 `[이름을 입력하세요]` — 개인정보 보호책임자 이름
-2. `help@dazzig.com` 메일 수신 설정 (Cloudflare Email Routing 무료 포워딩 권장)
-3. 시행일 — 현재 2026년 9월 1일로 적혀 있음. 실제 출시일에 맞춰 조정
-4. 출시 후 `index.html`의 App Store 버튼 — `aria-disabled` 지우고 `href`를 실제 링크로 교체
+2. 시행일 — 현재 2026년 9월 1일로 적혀 있음. 실제 출시일에 맞춰 조정
+3. 출시 후 `index.html`의 App Store 버튼 — `aria-disabled` 지우고 `href`를 실제 링크로 교체
 
 ## 배포
 
@@ -47,17 +46,10 @@ A     @    185.199.111.153
 CNAME www  <계정명>.github.io
 ```
 
-### 2단계 — 메일 (help@dazzig.com)
+### 2단계 — 메일
 
-**네이버웍스 Standard (권장, 1인/월 7,000원 연간 계약)**
-도메인 메일은 Standard 플랜부터입니다. Free·Lite에는 메일이 없습니다.
-네임서버를 옮길 필요 없이, 가입 후 안내받는 MX 레코드를 예스닉 DNS에 추가하면 됩니다.
-수신과 발신이 모두 `help@dazzig.com`으로 동작합니다.
-
-**Cloudflare Email Routing (무료)**
-네임서버를 Cloudflare로 이전해야 하며, **수신 전용**입니다.
-답장은 포워딩 받는 주소로 발신되므로 개인 메일 주소가 노출됩니다.
-쓰려면 앱 전용 메일 계정을 따로 만들어 연결하세요.
+문의처는 `ceo@nem0.kr`입니다. nem0.kr 도메인은 네이버웍스(worksmobile) MX가 이미 연결되어 있어 별도 설정이 필요 없습니다.
+`dazzig.com`에는 MX 레코드가 없으므로 `@dazzig.com` 주소를 문의처로 적지 마세요.
 
 ### Vercel을 쓰는 경우
 

@@ -1,0 +1,5 @@
+{
+  "_comment": "웹앱 원격 플래그 (docs/prd-web.md WB-51) — 스토어 승인 시 해당 URL을 채우면 설치 배너가 켜진다. null = 미노출.",
+  "ios_store_url": null,
+  "android_store_url": null
+}

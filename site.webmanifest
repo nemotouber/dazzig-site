@@ -1,0 +1,14 @@
+{
+  "name": "다찍어",
+  "short_name": "다찍어",
+  "description": "강의 슬라이드를 찍으면 AI가 과목별 복습 노트로 정리하는 앱",
+  "lang": "ko",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f6f7fa",
+  "theme_color": "#2144e0",
+  "icons": [
+    { "src": "/icon.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

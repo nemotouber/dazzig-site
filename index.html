@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="only light">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>다찍어 — 강의 슬라이드를 찍으면 AI가 정리하는 복습 노트 앱</title>
+<meta name="description" content="강의 슬라이드를 찍기만 하면 AI가 과목별로 정리된 복습 노트로 만들어 주는 대학생 필기 앱. 기울어진 사진 자동 보정, 시간표 기반 과목 분류, 노트 내용 검색, PDF 내보내기까지 무료로.">
+<meta name="keywords" content="다찍어,강의노트 앱,수업 필기 앱,대학생 필기,강의 슬라이드 정리,AI 노트 정리,시간표 앱,복습 노트,문서 스캔,PDF 내보내기">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#2144e0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12151d" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://dazzig.com/">
+<!-- 검색 콘솔 등록 시 발급받은 값을 채워 주석 해제 (Google Search Console · 네이버 서치어드바이저) -->
+<!-- <meta name="google-site-verification" content=""> -->
+<!-- <meta name="naver-site-verification" content=""> -->
+<meta property="og:site_name" content="다찍어">
+<meta property="og:title" content="다찍어 — 찍기만 하면 복습 노트가 되는 앱">
+<meta property="og:description" content="강의 슬라이드를 찍기만 하면 AI가 과목별로 정리된 복습 노트로 만들어 줍니다. 시간표 분류, 검색, PDF 내보내기까지.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dazzig.com/">
+<meta property="og:image" content="https://dazzig.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="다찍어 — 찍기만 하면 복습 노트가 됩니다">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="다찍어 — 찍기만 하면 복습 노트가 되는 앱">
+<meta name="twitter:description" content="강의 슬라이드를 찍기만 하면 AI가 과목별로 정리된 복습 노트로 만들어 줍니다.">
+<meta name="twitter:image" content="https://dazzig.com/og.jpg">
+<!-- iOS Smart App Banner — 앱스토어 승인 후 APP_ID를 채워 주석 해제 -->
+<!-- <meta name="apple-itunes-app" content="app-id=APP_ID"> -->
+<link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" href="icon.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dazzig.com/#org",
+      "name": "다찍어",
+      "alternateName": "dazzig",
+      "url": "https://dazzig.com/",
+      "logo": "https://dazzig.com/icon.png",
+      "email": "help@dazzig.com",
+      "contactPoint": { "@type": "ContactPoint", "email": "help@dazzig.com", "contactType": "customer support", "availableLanguage": "ko" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dazzig.com/#website",
+      "url": "https://dazzig.com/",
+      "name": "다찍어",
+      "inLanguage": "ko",
+      "publisher": { "@id": "https://dazzig.com/#org" }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://dazzig.com/#app",
+      "name": "다찍어",
+      "alternateName": ["dazzig", "다찍어 - 강의 필기 노트"],
+      "url": "https://dazzig.com/",
+      "image": "https://dazzig.com/og.jpg",
+      "description": "강의 슬라이드를 찍기만 하면 AI가 과목별로 정리된 복습 노트로 만들어 주는 앱. 사진 자동 보정, 시간표 기반 과목 분류, 검색, PDF 내보내기를 지원합니다.",
+      "applicationCategory": "EducationalApplication",
+      "applicationSubCategory": "Productivity",
+      "operatingSystem": "iOS 16 이상, 웹 브라우저",
+      "inLanguage": "ko",
+      "isAccessibleForFree": true,
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+      "featureList": ["강의 슬라이드 연속 촬영", "기울어진 사진 자동 보정", "AI 복습 노트 생성", "시간표 기반 과목 자동 분류", "노트 내용 검색", "PDF 내보내기"],
+      "author": { "@id": "https://dazzig.com/#org" },
+      "publisher": { "@id": "https://dazzig.com/#org" }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="주 메뉴">
+  <div class="nav-in">
+    <a class="brand" href="/"><img src="icon.png" alt="" width="28" height="28">다찍어</a>
+    <span class="nav-links">
+      <a href="/support.html">지원</a>
+      <a href="/privacy.html">개인정보처리방침</a>
+      <a class="nav-cta" href="https://app.dazzig.com/?utm_source=landing">시작하기</a>
+    </span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">갤러리에 잠든 슬라이드 사진, 그만 쌓아두세요</p>
+      <h1>찍기만 하면<br>복습 노트가 됩니다</h1>
+      <p class="lead">강의 슬라이드를 연속으로 찍어두면, AI가 과목별로 정리된 노트로 만들어 줍니다. 수업 끝나고 따로 정리할 시간이 없는 대학생을 위한 필기 앱입니다.</p>
+      <div class="cta">
+        <a class="btn-primary" href="https://app.dazzig.com/?utm_source=landing">지금 바로 시작하기</a>
+        <small>무료 · 설치 없음 · 폰 브라우저에서 바로</small>
+        <!-- 스토어 오픈 시: 아래 문구를 각 스토어 버튼으로 교체 -->
+        <span class="store-soon">iOS · Android 앱 출시 준비 중</span>
+      </div>
+    </div>
+
+    <!-- 변환 비주얼 — 흐린 촬영본이 정리된 노트가 되는 장면 (CSS 목업, 이미지 없음) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="shot shot-a"><i></i></div>
+      <div class="shot shot-b"><i></i></div>
+      <div class="note-mock">
+        <div class="nm-top">
+          <span class="nm-title">교육심리학 — 5주차</span>
+          <span class="nm-pill">AI 정리</span>
+        </div>
+        <div class="nm-h">기억의 3단계</div>
+        <p class="nm-p">감각기억은 순간적으로 사라지고, 단기기억은 반복하지 않으면 20~30초 안에 소멸한다.</p>
+        <div class="nm-callout">
+          <span class="nm-callout-t">✳ 핵심 개념</span>
+          <span>복습 없는 기억은 사라진다 — 장기기억으로 넘어가는 유일한 통로는 복습이다.</span>
+        </div>
+        <ul class="nm-list">
+          <li>감각기억 → 단기기억 → 장기기억</li>
+          <li>시험 전 재열람이 파지율을 결정</li>
+        </ul>
+        <div class="nm-film"><b class="on"></b><b></b><b></b><b></b></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="strip" role="presentation">
+  <div class="strip-in">
+    <span>설치 없음 — 웹에서 바로</span>
+    <span>기울어진 사진 자동 보정</span>
+    <span>AI 노트 정리 월 10회 무료</span>
+  </div>
+</div>
+
+<main>
+  <section class="features" aria-labelledby="features-h">
+    <h2 id="features-h" class="sr-only">주요 기능</h2>
+    <div class="feature">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h7L17 6h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/></svg></span>
+      <h3>강의 슬라이드 연속 촬영</h3>
+      <p>슬라이드가 넘어갈 때마다 셔터만 누르세요. 비스듬히 찍힌 사진은 화면 영역을 찾아 자동으로 반듯하게 펴집니다.</p>
+    </div>
+    <div class="feature">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg></span>
+      <h3>AI가 알아서 노트 정리</h3>
+      <p>찍은 장면을 AI가 읽어 제목과 요점이 있는 복습 노트로 만듭니다. 시간표를 넣어두면 어떤 수업 자료인지 과목까지 자동으로 분류됩니다.</p>
+    </div>
+    <div class="feature">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m10.5 13.5 1.5 1.5 3-3"/></svg></span>
+      <h3>학기별 보관과 검색</h3>
+      <p>카테고리·과목·주차로 정리되고, 노트 안의 내용까지 검색됩니다. 시험 기간에는 필요한 주차만 골라 PDF로 내보내세요.</p>
+    </div>
+  </section>
+
+  <section class="steps" aria-labelledby="steps-h">
+    <h2 id="steps-h">이렇게 씁니다</h2>
+    <ol>
+      <li><b>01</b><strong>수업 중에 찍습니다.</strong><span>슬라이드가 넘어갈 때마다 셔터를 누릅니다. 이미 사진첩에 있는 강의 자료를 한 번에 불러올 수도 있습니다.</span></li>
+      <li><b>02</b><strong>수업이 끝나면 정리 버튼을 누릅니다.</strong><span>AI가 슬라이드 내용을 읽어 제목과 요점이 있는 노트로 만듭니다.</span></li>
+      <li><b>03</b><strong>과목별로 분류된 노트를 확인합니다.</strong><span>시간표에 등록된 수업 시각을 기준으로 과목이 자동 지정되고, 언제든 직접 옮길 수 있습니다.</span></li>
+    </ol>
+  </section>
+
+  <section class="who" aria-labelledby="who-h">
+    <h2 id="who-h">이런 분께 맞습니다</h2>
+    <ul>
+      <li>수업이 끝나면 사진첩에 슬라이드 사진만 잔뜩 남아 있는 대학생</li>
+      <li>강의 자료를 옮겨 적을 시간은 없지만 시험 전에 과목별 복습 노트가 필요한 사람</li>
+      <li>판서·교재·유인물을 찍어 문서 스캔처럼 반듯하게 보관하고 싶은 사람</li>
+      <li>중간고사·기말고사 때 주차별 자료를 PDF로 한 번에 꺼내 쓰고 싶은 사람</li>
+    </ul>
+  </section>
+
+  <section class="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">자주 묻는 질문</h2>
+    <details>
+      <summary>다찍어는 무료인가요?</summary>
+      <p>무료로 사용할 수 있고 광고가 없습니다. AI 노트 정리는 매달 10번까지 무료로 제공되며 다음 달에 다시 채워집니다. 한도를 다 쓰더라도 촬영과 저장은 계속 할 수 있습니다.</p>
+    </details>
+    <details>
+      <summary>찍은 사진은 어디에 저장되나요?</summary>
+      <p>앱에서는 원본이 기기 안에 저장되고, 노트를 만드는 동안에만 서버에 잠시 올라갔다가 완성되면 곧바로 삭제됩니다. 웹에서는 브라우저 저장 공간이 지워질 수 있어 촬영본을 계정에 안전하게 보관합니다 — 기기를 바꿔도 그대로 남습니다. 자세한 내용은 <a href="/privacy.html">개인정보처리방침</a>에 정리해 두었습니다.</p>
+    </details>
+    <details>
+      <summary>시간표를 꼭 등록해야 하나요?</summary>
+      <p>아니요. 시간표가 없으면 슬라이드 내용을 보고 과목을 분류하고, 분류가 어려운 자료는 미분류함에 두었다가 직접 지정할 수 있습니다. 시간표를 넣어두면 촬영 시각으로 바로 과목이 정해져 더 정확해집니다.</p>
+    </details>
+    <details>
+      <summary>앱을 설치해야 하나요?</summary>
+      <p>아니요. <a href="https://app.dazzig.com/">app.dazzig.com</a>에 접속하면 어떤 폰에서든 설치·가입 없이 바로 쓸 수 있습니다. iOS·Android 앱은 출시를 준비 중이며, 같은 계정으로 로그인하면 웹에서 만든 노트가 앱에서도 그대로 이어집니다.</p>
+    </details>
+    <p class="more"><a href="/support.html">더 많은 질문과 문의 방법 보기 →</a></p>
+  </section>
+
+  <section class="bottom-cta">
+    <div class="bc-in">
+      <h2>오늘 수업부터 바로 시작하세요</h2>
+      <p>설치도 가입도 없이, 셔터 한 번이면 됩니다.</p>
+      <a class="btn-primary" href="https://app.dazzig.com/?utm_source=landing">브라우저에서 열기</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-in">
+    <span>© 2026 다찍어 · <a href="mailto:help@dazzig.com">help@dazzig.com</a></span>
+    <span class="links">
+      <a href="https://app.dazzig.com/">웹에서 사용</a>
+      <a href="/support.html">지원</a>
+      <a href="/privacy.html">개인정보처리방침</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

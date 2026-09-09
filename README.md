@@ -33,7 +33,9 @@ App Store Connect 필수 항목(개인정보처리방침 URL·지원 URL)과 앱
 
 ### 1단계 — 사이트 (GitHub Pages)
 
-GitHub 레포 Settings → Pages → Source를 `main` 브랜치 `/site` 폴더로 지정.
+**실제 서빙 리포는 별도의 공개 리포 `nemotouber/dazzig-site`(main 루트)입니다.** 이 폴더(`site/`)가 원본이고,
+`npm run deploy:site`(`scripts/deploy-site.sh`)가 그 리포에 복사·커밋·푸시합니다. `--dry-run`을 붙이면 바뀔 파일만 봅니다.
+이 리포의 `main`에 커밋하는 것만으로는 dazzig.com이 바뀌지 않습니다 (2026-09-09 확인).
 `CNAME` 파일이 있으므로 커스텀 도메인은 자동으로 잡힙니다.
 
 예스닉 DNS 관리에서 파킹 A 레코드를 지우고 아래를 등록:
